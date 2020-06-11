@@ -1,2 +1,3 @@
 # Intro-to-Algorithms
-a course by UDACITY
+Data structure and algoriyhm course by UDACITY
+presented by Michael Littman
