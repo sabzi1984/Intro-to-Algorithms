@@ -1,0 +1,13 @@
+def partition(L, v):
+    smaller=[]
+    bigger=[]
+    for val in L:
+        if val < v:
+            smaller.append(val)
+            
+        elif val > v:
+            bigger.append(val)
+        
+    return smaller+[v]+bigger
+L=[31,45,91,51,66,82,28,33,11,89,84,27,36]
+print(partition(L,84))
