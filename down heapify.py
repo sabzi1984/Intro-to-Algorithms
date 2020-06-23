@@ -1,7 +1,10 @@
 def remove_min(L):
-    L[0]=L.pop()
+    if len(L)==1:
+        return[]
+    else:
+        L[0]=L.pop()
     
-    down_heapify(L, 0)
+        down_heapify(L, 0)
     return L
     
 
@@ -56,9 +59,7 @@ def build_heap(L):
         down_heapify(L, i)
     return L
 
-def test():
-    L = range(10)
-    build_heap(L)
-    remove_min(L)
-    # now, the new minimum should be 1
-    assert L[0] == 1
+
+L = list(range(10))
+print(build_heap(L))
+print(remove_min(L))
