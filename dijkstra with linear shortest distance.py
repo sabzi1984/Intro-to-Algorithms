@@ -37,3 +37,13 @@ def make_link(G, node1, node2, w):
         (G[node2])[node1] = 0
     (G[node2])[node1] += w
     return G
+(a,b,c,d,e,f,g) = ('A', 'B', 'C', 'D', 'E', 'F', 'G')
+triples = ((a,c,3),(c,b,10),(a,b,15),(d,b,9),(a,d,4),(d,f,7),(d,e,3), 
+               (e,g,1),(e,f,5),(f,g,2),(b,f,1))
+G = {}
+for (i,j,k) in triples:
+    make_link(G, i, j, k)
+    
+dist=dijkstra(G, a)
+print(dist[e])
+print(dist['E'])
