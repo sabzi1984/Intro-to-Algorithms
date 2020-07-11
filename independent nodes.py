@@ -32,23 +32,6 @@ def make_link(G, node1, node2):
     (G[node2])[node1] = 1
     return G
 
-def break_link(G, node1, node2):
-    if node1 not in G:
-        print ("error: breaking link in a non-existent node")
-        return
-    if node2 not in G:
-        print ("error: breaking link in a non-existent node")
-        return
-    if node2 not in G[node1]:
-        print ("error: breaking non-existent link")
-        return
-    if node1 not in G[node2]:
-        print ("error: breaking non-existent link")
-        return
-    del G[node1][node2]
-    del G[node2][node1]
-    return G
-   
 # This function should use the k_clique_decision function
 # to solve the independent set decision problem
 def independent_set_decision(H, s):
