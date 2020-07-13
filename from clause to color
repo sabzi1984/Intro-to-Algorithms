@@ -1,0 +1,10 @@
+x: variables
+y:clauses
+n: nodes
+m:edges
+In the reduction from 3-SAT to 3-colorability, we convert 3-SAT problem with x variable and y clauses into a graph with n nodes (verices) and m edges. 
+considerin a gadget with 6 nodes and 7 edges, the relationship between the number of nodes and edges with the number of variables and clauses is as follow.
+
+n=2x+6y+3
+m=3x+13y+3
+
